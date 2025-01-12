@@ -69,7 +69,7 @@ function Header() {
             </nav>
 
             <div>
-              <p>Our mission is to inspire and empower a new generation to stay ahead in the tech-driven world by mastering the art of PROGRAMMING 💻👩🏼‍💻🤖🚀. Join us on this exciting journey of innovation and learning!</p>
+              <p className='font-medium tracking-wider'>Our mission is to inspire and empower a new generation to stay ahead in the tech-driven world by mastering the art of PROGRAMMING 💻👩🏼‍💻🤖🚀. Join us on this exciting journey of innovation and learning!</p>
               <ul className='flex items-center gap-4 leading-none mt-8 font-thin text-white text-xs'>
                 <li><a className='flex justify-center items-center rounded-full w-10 h-10 bg-primaryTextColor hover:bg-secondaryColor duration-500' target='_blank' href="https://www.facebook.com/Robotics.circuits.Coding"><i className="fa-brands fa-facebook-f"></i></a></li>
                 <li><a className='flex justify-center items-center rounded-full w-10 h-10 bg-primaryTextColor hover:bg-secondaryColor duration-500' target='_blank' href="https://www.instagram.com"><i className="fa-brands fa-instagram"></i></a></li>
