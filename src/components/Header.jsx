@@ -48,9 +48,9 @@ function Header() {
           </button>
         </div>
 
-        <div  className={`${openMenu ? "translate-x-0 opacity-100" : "-translate-x-full opacity-0"} md:hidden w-full transition-all duration-500 absolute top-0 left-0 h-screen z-10`}>
-          <div onClick={() => setOpenMenu(!openMenu)} className='bg-primaryColor h-screen bg-opacity-10'></div>
-          <div className='flex flex-col gap-12 bg-primaryColor absolute top-0 left-0 w-full sm:w-1/2 h-screen z-20 p-8'>
+        <div  className={`${openMenu ? "translate-x-0 opacity-100" : "-translate-x-full opacity-0"} md:hidden w-full transition-all duration-500 fixed top-0 left-0 overflow-y-scroll h-screen z-10`}>
+          <div onClick={() => setOpenMenu(!openMenu)} className='bg-primaryColor absolute w-full h-full bg-opacity-10'></div>
+          <div className='flex flex-col gap-12 bg-primaryColor w-full sm:w-1/2 p-8 '>
             <Link className='flex items-center' onClick={() => setOpenMenu(!openMenu)} to="/">
               <img className='w-3/4' src={logo1} alt="logo for genius coders" />
               <button  className='flex flex-col w-9 gap-1 p-2 bg-secondaryColor' onClick={() => setOpenMenu(!openMenu)}>

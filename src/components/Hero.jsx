@@ -7,7 +7,7 @@ import astro from "/elements/astro.gif"
 import { Link } from 'react-router-dom'
 function Hero() {
   return (
-    <div className='flex flex-col lg:flex-row lg:items-center w-full h-screen pt-[90px] px-8 sm:px-12 md:px-24 lg:px-44 relative overflow-hidden'>
+    <div className='flex flex-col lg:flex-row lg:items-center w-full h-screen pt-[90px] px-8 sm:px-12 md:px-24 relative overflow-hidden'>
       <div className='layer absolute top-0 left-0 bottom-0 right-0 bg-secondaryColor bg-opacity-0 -z-10'></div>
       <img className='max-w-sm absolute -right-28 lg:-right-0 top-24 -z-10' src={sunVideo} alt="" />
       <img className='absolute w-24 lg:w-48 left-1/2 md:left-2/3 top-80 lg:left-32 lg:top-32 -z-20' src={paperRocket1} alt="" />
@@ -32,5 +32,3 @@ function Hero() {
 }
 
 export default Hero
-
-// jaturat
