@@ -27,6 +27,7 @@ function Hero() {
       <div className='flex-1 px-8 '>
         <img className='w-5/6 mx-auto' src={bg} alt="genius and successful kids" loading="lazy" />
       </div>
+
     </div>
   )
 }
