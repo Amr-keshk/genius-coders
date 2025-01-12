@@ -9,7 +9,7 @@ function Header() {
       <div className='flex justify-between items-center py-2 px-12 md:px-24 lg:px-44 text-primaryTextColor'>
         
         <Link to="/">
-          <img className='w-24' src={logo} alt="Genius Coders Logo" />
+          {/* <img className='w-24' src={logo} alt="Genius Coders Logo" /> */}
         </Link>
 
         <nav className='hidden md:block'>
