@@ -21,7 +21,7 @@ function Hero() {
         <div className='flex-1 lg:flex-initial lg:w-4/6 xl:flex-1 flex justify-center flex-col'>
 
           <h1 className="text-primaryTextColor font-bold uppercase">today, <strong className='text-primaryColor'>programming</strong> is essential, <span className='block'>not optional</span></h1>
-          <ul className='flex flex-col gap-2 text-primaryTextColor sm:my- '>
+          <ul className='flex flex-col gap-2 text-primaryTextColor sm:my-8 '>
             <li className='flex items-center gap-4 font-medium'><i className="fa-solid fa-brain"></i>practical applications in every session.</li>
             <li className='flex items-center gap-4 font-medium'><i className="fa-solid fa-child-reaching"></i>Expert in practical children&apos;s education</li>
             <li className='flex items-center gap-4 font-medium'><i className="fa-solid fa-award"></i>Taught by a certified engineer</li>
@@ -41,7 +41,7 @@ function Hero() {
 
 
         <div className='flex-1 lg:flex-initial lg:w-2/6 xl:flex-1'>
-          <img className='max-w-sm mx-auto' src={bg} alt="Astronaut in space representing future learning journey" loading="lazy" />
+          <img className='max-w-full mx-auto' src={bg} alt="Astronaut in space representing future learning journey" loading="lazy" />
         </div>
 
       </div>
