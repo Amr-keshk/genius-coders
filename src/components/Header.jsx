@@ -34,9 +34,9 @@ function Header() {
 
         <div className='hidden md:block'>
           <ul className='flex items-center gap-4 leading-none font-thin text-white text-xs'>
-            <li><a className='flex justify-center items-center rounded-full w-12 h-10 bg-secondaryColor hover:bg-primaryColor duration-500' target='_blank' href="https://www.facebook.com/Robotics.circuits.Coding"><i className="fa-brands fa-facebook-f"></i></a></li>
-            <li><a className='flex justify-center items-center rounded-full w-12 h-10 bg-secondaryColor hover:bg-primaryColor duration-500' target='_blank' href="https://www.instagram.com"><i className="fa-brands fa-instagram"></i></a></li>
-            <li><a className='flex justify-center items-center rounded-full w-12 h-10 bg-secondaryColor hover:bg-primaryColor duration-500' target='_blank' href="https://wa.me/+201028815414"><i className="fa-brands fa-whatsapp"></i></a></li>
+            <li><a className='flex justify-center items-center rounded-full w-12 h-12 bg-secondaryColor hover:bg-primaryColor duration-500' target='_blank' href="https://www.facebook.com/Robotics.circuits.Coding"><i className="fa-brands fa-facebook-f"></i></a></li>
+            <li><a className='flex justify-center items-center rounded-full w-12 h-12 bg-secondaryColor hover:bg-primaryColor duration-500' target='_blank' href="https://www.instagram.com"><i className="fa-brands fa-instagram"></i></a></li>
+            <li><a className='flex justify-center items-center rounded-full w-12 h-12 bg-secondaryColor hover:bg-primaryColor duration-500' target='_blank' href="https://wa.me/+201028815414"><i className="fa-brands fa-whatsapp"></i></a></li>
           </ul>
         </div>
 
@@ -49,7 +49,7 @@ function Header() {
         </div>
 
         <div  className={`${openMenu ? "translate-x-0 opacity-100" : "-translate-x-full opacity-0"} md:hidden w-full h-screen transition-all duration-500 fixed top-0 left-0 overflow-y-scroll z-10`}>
-          <div onClick={() => setOpenMenu(!openMenu)} className='layer bg-primaryColor fixed top-0 right-0 w-full h-full  bg-opacity-10'></div>
+          <div onClick={() => setOpenMenu(!openMenu)} className='layer bg-primaryColor fixed -z-10 top-0  right-0 w-full h-full  bg-opacity-10'></div>
           <div className='flex flex-col gap-12 bg-primaryColor min-h-full w-full sm:w-1/2 p-8 '>
             <Link className='flex items-center' onClick={() => setOpenMenu(!openMenu)} to="/">
               <img className='w-3/4' src={logo1} alt="logo for genius coders" />
