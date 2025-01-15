@@ -5,8 +5,8 @@ import { Link, NavLink } from 'react-router-dom'
 function Header() {
   const [openMenu, setOpenMenu] = React.useState(false);
   return (
-    <div className='fixed w-full bg-white bg-opacity-80 afterHeader z-20'>
-      <div className='flex justify-between items-center py-2 px-12 md:px-24 lg:px-44 text-primaryTextColor'>
+    <div className='fixed w-full bg-secondaryColor afterHeader z-20'>
+      <div className='flex justify-between items-center bg-white bg-opacity-80 max-w-screen-2xl mx-auto py-2 px-12 md:px-24 lg:px-44 text-primaryTextColor'>
         
         <Link to="/">
           <img className='w-24' src={logo} alt="Genius Coders Logo" />
