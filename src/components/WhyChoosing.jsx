@@ -1,7 +1,23 @@
 import React from 'react'
 import Title from './Title'
 function WhyChoosing() {
-  const reasons = ["expert instructors", "quality educators", "expert tutor", "affordable"]
+  const reasons = [
+    {
+      "title": "affordable pricing",
+      "describe" : "we provide top-quality education at competitive rates",
+      "icon": "fa-dollar-sign"
+    },
+    {
+      "title": "Tailored curriculum",
+      "describe" : "our courses are designed to match real-world demands and individual learning paces",
+      "icon": "fa-book"
+    },
+    {
+      "title": "flexible learning options",
+      "describe" : "choose between online and in-person classes to fit your schedule",
+      "icon": "fa-mobile-alt"
+    }
+  ]
   return (
     <div className='bg-thirdColor'>
       <Title>what makes us different</Title>

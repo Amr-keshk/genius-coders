@@ -1,6 +1,6 @@
 import React from 'react'
-import logo from '/logo/main_logo1.png'
-import logo1 from '/logo/logo3.png'
+import logo from '/logo/desktop_logo11.png'
+import logo1 from '/logo/mobile_logo1.png'
 import { Link, NavLink } from 'react-router-dom'
 function Header() {
   const [openMenu, setOpenMenu] = React.useState(false);

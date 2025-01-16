@@ -32,3 +32,28 @@ body {
     left:10%;
     border-radius: 100px;
 }
+.flying_rocket {
+   
+}
+@keyframes flyingRocket {
+    0% {
+        translate: -20rem 0;
+    }
+    70% {
+        translate: 0rem 0;
+        rotate: -45deg
+    }    
+    100% {
+        translate: 30rem -60rem;
+        rotate: -90deg;
+
+    }
+}
+
+.flying_container button:hover ~ .flying_rocket {
+    opacity: 100;
+    display: initial;
+    animation: flyingRocket;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}

@@ -1,9 +1,10 @@
-import React from 'react'
-import bg from "/bg/hero_image1.png"
+
+import bg from "/bg/hero_bg.webp"
 import paperRocket1 from "/elements/paper_rocket1.png"
 import paperRocket from "/elements/paper_rocket.png"
 import animatedSun from "/elements/sun_video1.gif"
 import astro from "/elements/astro.gif"
+import flyingRocket from "/elements/rocket.gif"
 import { Link } from 'react-router-dom'
 import { HelmetProvider, Helmet } from "react-helmet-async"
 function Hero() {
@@ -25,28 +26,34 @@ function Hero() {
 
         <div className='sm:text-2xl md:text-3xl flex-1 lg:flex-initial lg:w-4/6 xl:flex-1 flex flex-col gap-4'>
 
-          <h1 className="text-primaryTextColor font-bold uppercase">today, <strong className='text-primaryColor'>programming</strong> is essential, <span className='block'>not optional</span></h1>
+          <h1 className="text-primaryTextColor text-4xl md:text-6xl font-bold capitalize"><span className='block'>today,</span><u className='text-primaryColor'><strong>programming</strong></u> is essential, <span className=''>not optional</span></h1>
           <ul className='flex flex-col gap-2 text-primaryTextColor sm:my-8 '>
-            <li className='flex items-center gap-4 font-medium'><i className="fa-solid fa-brain text-primaryColor"></i>practical application in every session</li>
-            <li className='flex items-center gap-4 font-medium'><i className="fa-solid fa-child-reaching text-secondaryColor"></i>Expert in practical children&apos;s education</li>
-            <li className='flex items-center gap-4 font-medium'><i className="fa-solid fa-award"></i>Taught by a certified engineer</li>
+            <li className='flex items-center gap-4 font-medium'>- practical application in every session</li>
+            <li className='flex items-center gap-4 font-medium'>- Expert in practical children&apos;s education</li>
+            <li className='flex items-center gap-4 font-medium'>- Taught by a certified engineer</li>
           </ul>
 
           <div className='text-secondaryColor font-bold capitalize'>
             <span className='block mb-10 text-xl'>Join us and start building the future</span>
-            <button>
-              <Link to="/contact" className='relative' aria-label="Start learning programming for free with Genius Coders">
-                <span className='uppercase bg-primaryColor my-4 p-3 sm:p-6 hover:bg-secondaryColor rounded-e-full hover:text-primaryColor transition-all duration-500'>start for free</span>
-                <img className='min-w-60 absolute left-2/3 top-1/2 -translate-y-1/2 -z-10' src={astro} alt="Astronaut in space representing future learning journey" />
-              </Link>
-            </button>
+
+
+            <div className='flying_container relative'>
+              <button className='hover:-translate-x-6 duration-300'>
+                <Link to="/contact"  aria-label="Start learning programming for free with Genius Coders">
+                  <span className='uppercase bg-primaryColor text-white my-4 p-3 sm:p-6 hover:bg-secondaryColor rounded-xl duration-300'>try for free</span>
+                </Link>
+              </button>
+
+              <img className='min-w-60 absolute left-2/3 top-1/2 -translate-y-1/2 -z-10' src={astro} alt="Astronaut in space representing future learning journey" />
+              <img className="flying_rocket opacity-0 hidden rotate-45 absolute top-0 -z-10" src={flyingRocket} alt="flying rocket to coding world" />
+            </div>
           </div>
 
         </div>
 
 
         <div className='flex-1 lg:flex-initial lg:w-2/6 xl:flex-1'>
-          <img className='max-w-full mx-auto' src={bg} alt="Astronaut in space representing future learning journey" loading="lazy" />
+          <img className='max-w-full rounded-full mx-auto' src={bg} alt="Astronaut in space representing future learning journey" loading="lazy" />
         </div>
 
       </div>
