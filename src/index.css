@@ -37,23 +37,24 @@ body {
 }
 @keyframes flyingRocket {
     0% {
-        translate: -20rem 0;
+        translate: 0% 0;
+        rotate: 0deg
     }
-    70% {
-        translate: 0rem 0;
+    30% {
+        translate: 0% 0;
         rotate: -45deg
     }    
     100% {
-        translate: 30rem -60rem;
-        rotate: -90deg;
+        translate: 30vw -100vh;
+        rotate: -50deg;
 
     }
 }
-
+.flying_container button:hover ~ .astro {
+    display: none;
+}
 .flying_container button:hover ~ .flying_rocket {
-    opacity: 100;
+    opacity: 1;
     display: initial;
-    animation: flyingRocket;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
+    animation: flyingRocket 5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }

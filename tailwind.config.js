@@ -7,11 +7,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        primaryColor: "#00beae",
-        secondaryColor: "#ff9501",
+        green: "#00beae",
+        orange: "#ff9501",
         thirdColor: "rgb(243 245 244)",
-        primaryTextColor: "#0f2a47",
-        secondaryTextColor: "#a5a5a5",
+        darkblue: "#0f2a47",
+        gray: "#a5a5a5",
+        gradientStart: "#34d399",
+        gradientEnd: "#3b82f6",
       }
     },
   },
