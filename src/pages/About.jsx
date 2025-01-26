@@ -5,35 +5,11 @@ import Title from '../components/Title';
 import { Link } from "react-router-dom";
 import ReasonCard from "../components/ReasonCard.jsx"
 import FeatureList from "../components/FeatureList.jsx"
-
+import { featureList, reasons } from "../data/data.js" 
 function About() {
   const childImages = [childOne, childTwo];
-  const featureList = [
-    "quality educators",
-    "modern technologies",
-    "interactive classes",
-    "customized learning plans"
-  ];
-
-  const reasons = [
-    {
-      "title": "expert instructors",
-      "describe" : "learn from certified professionals with years of practical experience",
-      "icon" : "fa-graduation-cap"
-    },
-    {
-      "title": "hands-on practice",
-      "describe" : "engage in interactive projects and build a portfolio from day one",
-      "icon": "fa-cogs"
-    },
-    {
-      "title": "supportive community",
-      "describe" : "join a network of learners and mentors who support your journey",
-      "icon": "fa-handshake"
-    }
-  ];
   return (
-    <section className='w-full py-28 bg-thirdColor'>
+    <section className='w-full py-28 '>
       <div className='bg-white max-w-screen-2xl mx-auto px-12 md:px-24 lg:px-44 overflow-x-hidden'>
         <Title>about us</Title>
         <ReasonCard reasons={reasons} />

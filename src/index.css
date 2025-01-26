@@ -3,30 +3,35 @@
 @tailwind components;
 @tailwind utilities;
 :root {
-    --primaryColor: #00beae;
-    --secondaryColor:#ff9501;
+    --green: #00beae;
+    --orange:#ff9501;
+    --thirdColor: rgb(243 245 244);
+    --darkBlue: #0f2a47;
+    --gray: #a5a5a5;
+    --gradientStart: #34d399;
+    --gradientEnd: #3b82f6;
 }
 body {
 
     font-family: "Josefin Sans", serif;
   
 }
-.after-li:after {
+.underline-on-hover:after {
     content: "";
     position: absolute;
     width: 0%;
     height: 2px;
-    background: var(--primaryColor);
+    background: var(--green);
     top: 100%;
     right: 0;
     transition: 0.5s;
 }
-.afterHeader:after {
+.header-bottom-line:after {
     content: "";
     position: absolute;
     width: 80%;
     height: 2px;
-    background: var(--secondaryColor);
+    background: var(--orange);
     top: calc(100% - 1px);
     right: 10%;
     left:10%;

@@ -1,5 +1,5 @@
 import React from 'react'
-
+import PropTypes from 'prop-types'
 function ReasonCard({reasons}) {
   return (
     <div>
@@ -18,6 +18,10 @@ function ReasonCard({reasons}) {
       </div>
     </div>
   )
+}
+
+ReasonCard.propTypes = {
+  reasons: PropTypes.array.isRequired
 }
 
 export default ReasonCard

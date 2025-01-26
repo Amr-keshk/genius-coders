@@ -7,15 +7,12 @@ import astro from "/elements/astro.gif"
 import flyingRocket from "/elements/flying_rocket.webp"
 import { Link } from 'react-router-dom'
 import { HelmetProvider, Helmet } from "react-helmet-async"
+import { mainFeatures } from "../data/data.js"
 function Hero() {
-
-  // function handleAnimationEnded() {
-  //   window.location.href="/contact"
-  // }
 
   return (
     <div className='w-full bg-orange'>
-      <div className='bg-white flex flex-col gap-y-8 lg:flex-row lg:items-center max-w-screen-2xl mx-auto min-h-screen py-28 px-12 md:px-24 lg:px-44 relative z-0 overflow-hidden'>
+      <div className='bg-white flex flex-col gap-y-28 lg:flex-row lg:items-center max-w-screen-2xl mx-auto min-h-screen py-28 px-12 md:px-24 lg:px-44 relative z-0 overflow-hidden'>
         
         <HelmetProvider>
           <Helmet>
@@ -33,9 +30,9 @@ function Hero() {
 
           <h1 className="text-darkblue text-4xl md:text-6xl font-bold capitalize"><span className='block'>today,</span><u className='text-green'><strong>programming</strong></u> is essential, <span className=''>not optional</span></h1>
           <ul className='flex flex-col gap-2 text-darkblue sm:my-8 '>
-            <li className='flex items-center gap-4 font-medium'>- practical application in every session</li>
-            <li className='flex items-center gap-4 font-medium'>- Expert in practical children&apos;s education</li>
-            <li className='flex items-center gap-4 font-medium'>- Taught by a certified engineer</li>
+            {
+              mainFeatures.map(feature => <li key={feature} className='flex items-center gap-4 font-medium'>{feature}</li>)
+            }
           </ul>
 
           <div className='text-orange font-bold capitalize'>

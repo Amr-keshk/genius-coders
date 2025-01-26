@@ -7,13 +7,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        green: "#00beae",
-        orange: "#ff9501",
-        thirdColor: "rgb(243 245 244)",
-        darkblue: "#0f2a47",
-        gray: "#a5a5a5",
-        gradientStart: "#34d399",
-        gradientEnd: "#3b82f6",
+        green: "var(--green)",
+        orange: "var(--orange)",
+        thirdColor: "var(--thirdColor)",
+        darkblue: "var(--darkBlue)",
+        gray: "var(--gray)",
+        gradientStart: "var(--gradientStar)",
+        gradientEnd: "var(--gradientEnd)",
       }
     },
   },
