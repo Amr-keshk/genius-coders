@@ -1,11 +1,9 @@
 import React from 'react'
-import lineHeart from "/elements/line-heart-green.png"
-
-function Title({children, style, lineStyle}) {
+function Title({children, iconTitle}) {
   return (
-    <div className='title py-10 relative z-0'>
-      <h2 className={`font-semibold text-2xl text-center tracking-widest capitalize text-orange ${style ? style : ""}`}>{children}</h2>
-      <img className={`${lineStyle ? lineStyle : ""} absolute top-1/2 left-1/2 -translate-x-1/2`} src={lineHeart} alt="heart with line" />
+    <div className='pt-10 z-0 flex space-x-2'>
+      {iconTitle}
+      <h2 className={`font-bold text-2xl  uppercase text-orange`}>{children}</h2>
     </div>
   )
 }

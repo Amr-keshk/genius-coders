@@ -5,6 +5,7 @@
 :root {
     --green: #00beae;
     --orange:#ff9501;
+    --lightOrange: #fff8f0;
     --thirdColor: rgb(243 245 244);
     --darkBlue: #0f2a47;
     --gray: #a5a5a5;
@@ -12,9 +13,10 @@
     --gradientEnd: #3b82f6;
 }
 body {
-
     font-family: "Josefin Sans", serif;
-  
+}
+::selection {
+    background: #00beae;
 }
 .underline-on-hover:after {
     content: "";
@@ -30,9 +32,9 @@ body {
     content: "";
     position: absolute;
     width: 80%;
-    height: 2px;
+    height: 4px;
     background: var(--orange);
-    top: calc(100% - 1px);
+    top: calc(100% - 2px);
     right: 10%;
     left:10%;
     border-radius: 100px;

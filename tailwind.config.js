@@ -12,8 +12,9 @@ export default {
         thirdColor: "var(--thirdColor)",
         darkblue: "var(--darkBlue)",
         gray: "var(--gray)",
-        gradientStart: "var(--gradientStar)",
+        gradientStart: "var(--gradientStart)",
         gradientEnd: "var(--gradientEnd)",
+        lightOrange: "var(--lightOrange)",
       }
     },
   },

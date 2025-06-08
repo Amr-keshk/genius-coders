@@ -45,7 +45,10 @@ function MobileMenu({openMenu, toggleMenu, setOpenMenu, iconBaseStyle}) {
                   </li>
                 )
               })}
+              <a className={`font-normal text-base px-4 py-3 bg-darkblue hover:bg-orange text-white rounded-full capitalize `} target='_blank' href="#" rel='noopener noreferrer'>join now</a>
             </ul>
+
+
           </div>
         </div>
 
