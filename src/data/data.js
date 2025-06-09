@@ -12,7 +12,11 @@ export const socialLinks = [
   {href: "https://wa.me/+201028815414", icon: "fa-brands fa-whatsapp"}
 
 ]
-export const mainFeatures = ["- Taught by a certified engineer", "- Expert in practical children's education", "- practical application in every session"]
+export const mainFeatures = [
+  "- Taught by a certified engineer", 
+  "- Expert in practical children's education", 
+  "- practical application in every session"
+];
 
 export const featureList = [
   "quality educators",
@@ -38,3 +42,10 @@ export const reasons = [
     "icon": "fa-handshake"
   }
 ];
+
+export const reasonsMakesDifferent = [
+  "I'm a Real Engineer", 
+  "Real Experience in the Field", 
+  "Tailored for Kids", 
+  "Results You Can See"
+]

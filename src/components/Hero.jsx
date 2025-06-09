@@ -11,10 +11,11 @@ import { mainFeatures } from "../data/data.js"
 import { Helmet } from "react-helmet-async"
 import cloud from "/elements/cloud.png"
 import threeLines from "/elements/three-lines.png"
+import bird from "/elements/greeting-bird.png"
 function Hero() {
-
   return (
-    <div className='w-full'>
+    <section className='w-full relative'>
+      <img className="fixed left-0 top-10 sm:top-20 z-10 w-20 sm:w-28" src={bird} alt="" />
       <div className='bg-lightOrange flex flex-col gap-y-28 lg:flex-row lg:items-center max-w-screen-2xl mx-auto min-h-screen py-28 px-12 md:px-24 lg:px-44 relative z-0 overflow-hidden'>
         <Helmet>
           <title>Genius Coders - Learn Programming for Kids</title>
@@ -54,17 +55,15 @@ function Hero() {
             <div className="relative flex-1 h-72 max-w-96 rounded-tl-full rounded-b-full bg-orange">
               <span className="absolute text-orange top-0 font-bold -left-10">✕</span>
               <img className='h-80 -mt-14 object-cover object-top mx-auto' src={bg1} alt="Astronaut in space representing future learning journey" loading="lazy" />
-              <img className='absolute -top-20 left-8 w-16 -scale-x-[1]' src={threeLines} alt="Astronaut in space representing future learning journey" loading="lazy" />
+              <img className='absolute -top-20 left-8 w-16 -scale-x-100' src={threeLines} alt="Astronaut in space representing future learning journey" loading="lazy" />
             </div>
             <div className="flex-1 self-end h-72 max-w-96 rounded-t-full rounded-br-full bg-green">
               <img className='h-80 object-cover -mt-20 mb-5' src={bg6} alt="Astronaut in space representing future learning journey" loading="lazy" />
             </div>
           </div>
-          
         </div>
-
       </div>
-    </div>
+    </section>
   )
 }
 

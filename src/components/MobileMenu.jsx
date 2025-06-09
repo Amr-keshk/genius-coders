@@ -3,7 +3,7 @@ import CloseBtn from './CloseBtn'
 import { NavLink, Link } from 'react-router-dom'
 import { navLink, socialLinks } from '../data/data'
 import PropTypes from "prop-types"
-import logo1 from '/logo/mobile_logo1.png'
+import logo from '/logo/logo-white.png'
 function MobileMenu({openMenu, toggleMenu, setOpenMenu, iconBaseStyle}) {
   return (
     <>
@@ -14,7 +14,7 @@ function MobileMenu({openMenu, toggleMenu, setOpenMenu, iconBaseStyle}) {
         <div onClick={toggleMenu} className='layer bg-green fixed -z-10 top-0 right-0 w-full h-full  bg-opacity-10'></div>
         <div className='flex flex-col gap-12 bg-green min-h-full w-full sm:w-1/2 p-8 '>
           <Link className='flex justify-evenly items-center' onClick={toggleMenu} to="/">
-            <img className='w-1/2' src={logo1} alt="logo for genius coders" />
+            <img className='h-14' src={logo} alt="logo for genius coders" />
             <CloseBtn setOpenMenu={setOpenMenu} openMenu={openMenu} />
           </Link>
           <nav>

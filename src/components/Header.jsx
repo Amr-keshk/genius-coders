@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '/logo/desktop_logo11.png'
+import logo from '/logo/logo.png'
 import { Link, NavLink } from 'react-router-dom'
 import {socialLinks, navLink} from "../data/data.js"
 import {throttle} from "lodash"
@@ -50,9 +50,9 @@ function Header() {
 
         </div>
       </div>
-      <div className='flex justify-between items-center max-w-screen-2xl mx-auto py- px-12 md:px-24 lg:px-44 text-darkblue'>
+      <div className='flex justify-between items-center max-w-screen-2xl mx-auto py-2 px-12 md:px-24 lg:px-44 text-darkblue'>
         <Link to="/">
-          <img className='w-20' src={logo} alt="Logo for Genius Coders Academy" />
+          <img className='h-12' src={logo} alt="Logo for Genius Coders Academy" />
         </Link>
 
         <nav className='hidden md:block'>
@@ -67,7 +67,7 @@ function Header() {
           </ul>
         </nav>
 
-        <a className={`hidden md:block font-normal text-base px-4 py-3 bg-orange hover:bg-green text-white rounded-full capitalize `} target='_blank' href="#" rel='noopener noreferrer'>join now</a>
+        <a className={`hidden md:block font-normal text-base px-8 py-3 bg-orange hover:bg-green text-white rounded-full capitalize `} target='_blank' href="#" rel='noopener noreferrer'>join now</a>
 
         {/* mobile screen menu */}
 
