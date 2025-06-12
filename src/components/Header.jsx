@@ -26,7 +26,6 @@ function Header() {
     return () => window.removeEventListener("scroll", handleScroll)
   }, [lastPosition]);
 
-  const iconBaseStyle = "flex justify-center items-center rounded-full duration-500";
   return (
     <header className={`${isHidden ? "-translate-y-full" : "translate-y-0"} bg-white transition duration-300 fixed w-full header-bottom-line z-20`}>
       <div className='w-full bg-green'>
@@ -66,12 +65,9 @@ function Header() {
             })}
           </ul>
         </nav>
-
         <a className={`hidden md:block font-normal text-base px-8 py-3 bg-orange hover:bg-green text-white rounded-full capitalize `} target='_blank' href="#" rel='noopener noreferrer'>join now</a>
-
         {/* mobile screen menu */}
-
-        <MobileMenu toggleMenu={toggleMenu} openMenu={openMenu} setOpenMenu={setOpenMenu} iconBaseStyle={iconBaseStyle} />
+        <MobileMenu toggleMenu={toggleMenu} openMenu={openMenu} setOpenMenu={setOpenMenu} />
       </div>
     </header>
   )

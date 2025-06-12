@@ -28,7 +28,7 @@ function About() {
             </div>
           </div>
           <img className="absolute w-20 left-0 " src={cloud} alt="cloud element" />
-          <div className='flex-1 text-darkblue text-center lg:text-start'>
+          <div className='flex-1 text-darkblue text-center lg:text-start pt-10'>
             <Title titleIcon = {titleIcon}>about us</Title>
             <h3 className='font-bold text-3xl capitalize'>it&apos;s our passion to work with children at <span className='text-orange uppercase'>Genius Coders</span></h3>
             <p className='text-sm lg:text-base my-4'>At Genius Coders, we are passionate about working with children because they are the foundation of tomorrow&#39;s technological advancements. We aim to build a generation that keeps pace with the rapid evolution of technology</p>

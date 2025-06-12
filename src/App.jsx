@@ -6,6 +6,8 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import Header from './components/Header'
 import Courses from './pages/Courses'
+import WhyChoosing from './pages/ChoosingUs'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -14,10 +16,12 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/courses" element={<Courses />} />
-          <Route path="/testimonials" element={<Testimonials />} />
           <Route path="/about" element={<About />} />
+          <Route path="/choosingUs" element={<WhyChoosing />} />
+          <Route path="/testimonials" element={<Testimonials />} />
+          <Route path="/courses" element={<Courses />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/footer" element={<Footer />} />
         </Routes>
       </Router>
     </div>

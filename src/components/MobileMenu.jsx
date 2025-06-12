@@ -1,10 +1,11 @@
 import React from 'react'
 import CloseBtn from './CloseBtn'
 import { NavLink, Link } from 'react-router-dom'
-import { navLink, socialLinks } from '../data/data'
+import { navLink } from '../data/data'
 import PropTypes from "prop-types"
 import logo from '/logo/logo-white.png'
-function MobileMenu({openMenu, toggleMenu, setOpenMenu, iconBaseStyle}) {
+import SocialList from './SocialList'
+function MobileMenu({openMenu, toggleMenu, setOpenMenu}) {
   return (
     <>
       <div className='md:hidden '>
@@ -35,20 +36,10 @@ function MobileMenu({openMenu, toggleMenu, setOpenMenu, iconBaseStyle}) {
 
           <div>
             <p className='font-medium tracking-wider'>Our mission is to inspire and empower a new generation to stay ahead in the tech-driven world by mastering the art of PROGRAMMING 💻👩🏼‍💻🤖🚀. Join us on this exciting journey of innovation and learning!</p>
-            <ul className='flex items-center gap-4 leading-none mt-8 font-thin text-white text-xs'>
-              {socialLinks.map((link, index) => {
-                return (
-                  <li key={`${link.href}-${index}`}>
-                    <a className={`${iconBaseStyle} w-10 h-10 bg-darkblue hover:bg-orange`} target='_blank' href={link.href} rel='noopener noreferrer'>
-                      <i className={link.icon}></i>
-                    </a>
-                  </li>
-                )
-              })}
-              <a className={`font-normal text-base px-4 py-3 bg-darkblue hover:bg-orange text-white rounded-full capitalize `} target='_blank' href="#" rel='noopener noreferrer'>join now</a>
-            </ul>
-
-
+            <div className='flex items-center gap-2 mt-8'>
+              <SocialList />
+              <a className={`font-normal text-base px-4 py-3 bg-darkblue hover:bg-orange text-white rounded-full capitalize`} target='_blank' href="#" rel='noopener noreferrer'>join now</a>
+            </div>
           </div>
         </div>
 

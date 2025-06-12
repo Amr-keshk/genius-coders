@@ -44,8 +44,10 @@ export const reasons = [
 ];
 
 export const reasonsMakesDifferent = [
-  "I'm a Real Engineer", 
-  "Real Experience in the Field", 
-  "Tailored for Kids", 
-  "Results You Can See"
+  " Supervised by a Qualified Engineer", 
+  "Practical, Experience-Based Curriculum", 
+  "Real Projects & Hands-On Training", 
+  "Affordable with a Purpose-Driven Vision",
+  "Flexible Timing & Exam-Friendly",
+  "Connected Curriculum with Clear Goals",
 ]

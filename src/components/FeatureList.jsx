@@ -1,12 +1,12 @@
 import React from 'react'
 
-function FeatureList({features, icon}) {
+function FeatureList({features, icon, space}) {
   return (
     
-    <ul className='grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-3'>
+    <ul className={`grid grid-cols-1 sm:grid-cols-2 ${space ? space : "gap-x-4 gap-y-3" }`}>
       {
         features.map(feature => 
-          <li key={feature} className='bg-thirdColor p-3 flex gap-2'>
+          <li key={feature} className={`bg-thirdColor p-3 flex ${space ? space : "gap-2"}`}>
             <i className={icon}></i>
             <h6 className='uppercase font-bold text-darkblue'>{feature}</h6>
           </li>
