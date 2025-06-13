@@ -7,14 +7,14 @@ import spaceShip from "/elements/space-ship.png"
 import kidAndRobot from "/elements/kid-robot.png"
 import paintPic from "/elements/paint3.png"
 import AIPic from "/bg/ai-revolution.avif"
-import stepOnMoon from "/bg/step-on-moon.avif"
+import dangerDinos from "/elements/danger-dinos.png"
 
 function WhyChoosing() {
 
   const titleIcon = <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ff9501"><path d="M440-70.77V-160H224.62q-27.62 0-46.12-18.5Q160-197 160-224.62v-510.76q0-27.62 18.5-46.12Q197-800 224.62-800H440v-89.23h40v818.46h-40ZM200-240h240v-287.69L200-240Zm360 80v-320l200 240v-495.38q0-9.24-7.69-16.93-7.69-7.69-16.93-7.69H560v-40h175.38q27.62 0 46.12 18.5Q800-763 800-735.38v510.76q0 27.62-18.5 46.12Q763-160 735.38-160H560Z"/></svg>
   
   return (
-    <section className='py-20 w-full'>
+    <section className='relative pt-20 w-full'>
       
       {/* <div className='flex'>
 
@@ -33,18 +33,15 @@ function WhyChoosing() {
         
       </div> */}
 
-      <div className='moon-box w-full'>
-        
-      </div>
-
-      <div className='relative -top-28 pb-28 max-w-screen-2xl mx-auto px-12 md:px-24 lg:px-44 overflow-x-hidden'>
+      <div className='moon-box w-full '></div>
+      <div className='relative -top-28 max-w-screen-2xl mx-auto px-12 md:px-24 lg:px-44 overflow-x-hidden'>
         <div className='relative'>
           <div className='w-full h-full absolute top-0 left-0 bg-black opacity-25 rounded-tr-3xl rounded-bl-3xl'></div>
           <img className='h-96 w-full object-cover max-sm:object-left bg-green rounded-tr-3xl rounded-bl-3xl' src={AIPic} alt="" />
         </div>
       </div>
 
-      <div className='relative pb-20 z-0 flex flex-col xl:flex-row gap-y-16 pt-20 bg-thirdColor  -- max-w-screen-2xl mx-auto px-12 md:px-24 lg:px-44 overflow-x-hidden'>
+      <div className='relative py-20 z-0 flex flex-col xl:flex-row gap-y-16 bg-thirdColor  -- max-w-screen-2xl mx-auto px-12 md:px-24 lg:px-44 overflow-x-hidden'>
         <img className='absolute h-24 right-0 md:right-1/2 top-0 -z-10' src={spaceShip} alt="" />
         <div className='flex-1 relative'>
           <img className='absolute w-40 -bottom-14 xl:bottom-10 -right-16 sm:right-16 z-10 ' src={kidAndRobot} alt="" />
@@ -61,6 +58,7 @@ function WhyChoosing() {
           <img className='absolute w-32 right-0 -top-16 -z-10' src={paintPic} alt="" />
         </div>
       </div>
+      <img className="absolute bottom-0 left-0 w-52 max-sm:w-40" src={dangerDinos} alt="" />
       
     </section>
   )

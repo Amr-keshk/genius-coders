@@ -17,6 +17,7 @@ body {
 }
 ::selection {
     background: #00beae;
+    color: white;
 }
 .underline-on-hover:after {
     content: "";
@@ -72,5 +73,13 @@ body {
     background-image: url(../public/bg/step-on-moon.avif);
     object-fit: cover;
     background-position: top;
+    background-attachment: fixed;
+}
+.footer-background {
+    width: 100%;
+    min-height: 400px;
+    background-image: url(../public/bg/space-wallpaper.avif);
+    object-fit: cover;
+    background-position: left;
     background-attachment: fixed;
 }
