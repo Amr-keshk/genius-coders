@@ -7,7 +7,7 @@ import spaceShip from "/elements/space-ship.png"
 import kidAndRobot from "/elements/kid-robot.png"
 import paintPic from "/elements/paint3.png"
 import AIPic from "/bg/ai-revolution.avif"
-import dangerDinos from "/elements/danger-dinos.png"
+import logo from "/logo/logo-white.png"
 
 function WhyChoosing() {
 
@@ -42,6 +42,7 @@ function WhyChoosing() {
       </div>
 
       <div className='relative py-20 z-0 flex flex-col xl:flex-row gap-y-16 bg-thirdColor  -- max-w-screen-2xl mx-auto px-12 md:px-24 lg:px-44 overflow-x-hidden'>
+        <img className='absolute left-0 top-36 brightness-90 max-w-full' src={logo} alt="" />
         <img className='absolute h-24 right-0 md:right-1/2 top-0 -z-10' src={spaceShip} alt="" />
         <div className='flex-1 relative'>
           <img className='absolute w-40 -bottom-14 xl:bottom-10 -right-16 sm:right-16 z-10 ' src={kidAndRobot} alt="" />
@@ -50,16 +51,14 @@ function WhyChoosing() {
             <h3 className='font-black text-4xl text-darkblue'>Real expertise. Real results.</h3>
             <p className='text-darkblue'>At Genius Coders, we don&apos;t just teach — we live what we teach. Our hands-on approach, real-world experience, and genuine care for kids set us apart from typical online programs.</p>
           </div>
-          <FeatureList space="gap-0" features={reasonsMakesDifferent} icon="fa-solid fa-check text-orange px-2 text-base" />
+          <FeatureList space="gap-0 bg-transparent" features={reasonsMakesDifferent} icon="fa-solid fa-check text-orange px-2 text-base" />
           <button className='hover:bg-orange transition mt-4 bg-green rounded-full text-sm px-8 py-4 text-white capitalize'>find events</button>
         </div>
         <div className='flex-1 mx-auto relative bg-sate-500'>
           <img className='w-3/4 mx-auto rounded-lg' src={codingKid} alt="" />
           <img className='absolute w-32 right-0 -top-16 -z-10' src={paintPic} alt="" />
         </div>
-      </div>
-      <img className="absolute bottom-0 left-0 w-52 max-sm:w-40" src={dangerDinos} alt="" />
-      
+      </div>      
     </section>
   )
 }

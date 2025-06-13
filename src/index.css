@@ -83,3 +83,24 @@ body {
     background-position: left;
     background-attachment: fixed;
 }
+.flying-dinosour:hover {
+    animation: flyingDinosour 5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+@keyframes flyingDinosour {
+    0% {
+        translate: 0% 0;
+        rotate: 0deg;
+    }
+    10% {
+        scale: 0.8;
+        translate: 0% 0;
+    }
+    90% {
+        translate: -78vw -16vh;
+        scale: 0.7;
+    }
+    100% {
+        translate: -80vw -17vh;
+        scale: -1 1;
+    }
+}
