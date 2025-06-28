@@ -15,6 +15,9 @@ export default {
         gradientStart: "var(--gradientStart)",
         gradientEnd: "var(--gradientEnd)",
         lightOrange: "var(--lightOrange)",
+      },
+      fontFamily: {
+        raleway: ['Raleway', 'sans-serif']
       }
     },
   },
