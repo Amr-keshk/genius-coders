@@ -14,7 +14,7 @@ function About() {
   const paragraph = "We believe children are the architects of the future. At Genius Coders, we nurture their curiosity and creativity through hands-on coding education that keeps pace with today's fast-moving technology."
   return (
     <section className='w-full py-28 relative overflow-hidden'>
-      <div className='bg-white max-w-screen-2xl mx-auto px-12 md:px-24 lg:px-44 relative'>
+      <div className='container max-w-screen-2xl mx-auto px-4 sm:px-12 md:px-24 lg:px-44 bg-white relative'>
         <ReasonCard reasons={reasons} />
         <div className='flex flex-col gap-6 items-center lg:flex-row lg:items-start'>
           <div className='flex-1 flex items-end justify-center gap-4'>

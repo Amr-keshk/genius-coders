@@ -45,7 +45,7 @@ function Courses() {
 
   return (
     <section className="pt-28 bg-gradient-to-b from-thirdColor to-white">
-      <div className="container mx-auto px-4 text-center">
+      <div className="container max-w-screen-2xl mx-auto px-4 sm:px-12 md:px-24 lg:px-44 text-center">
 
         <div className='flex items-center justify-center'>
           <Title whichSection={"courses"}>our courses</Title>

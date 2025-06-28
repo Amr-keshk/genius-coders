@@ -16,7 +16,7 @@ function Hero() {
   return (
     <section className='w-full relative'>
       <img className="fixed left-0 top-10 sm:top-20 z-10 w-20 sm:w-28" src={bird} alt="" />
-      <div className='bg-lightOrange flex flex-col gap-y-28 lg:flex-row lg:items-center max-w-screen-2xl mx-auto min-h-screen py-28 px-12 md:px-24 lg:px-44 relative z-0 overflow-hidden'>
+      <div className='bg-lightOrange flex flex-col gap-y-28 lg:flex-row lg:items-center min-h-screen py-28 container max-w-screen-2xl mx-auto px-4 sm:px-12 md:px-24 lg:px-44 relative z-0 overflow-hidden'>
         <Helmet>
           <title>Genius Coders - Learn Programming for Kids</title>
           <meta name="description" content="Join Genius Coders and learn programming in a fun, interactive way with practical applications in every session, taught by a certified engineer!" />
