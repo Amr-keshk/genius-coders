@@ -65,7 +65,7 @@ function Header() {
             })}
           </ul>
         </nav>
-        <a className={`hidden md:block font-normal text-base px-8 py-3 bg-orange hover:bg-green text-white rounded-full capitalize `} target='_blank' href="#" rel='noopener noreferrer'>join now</a>
+        <a className={`hidden md:block font-normal text-base px-8 py-3 bg-orange hover:bg-green text-white rounded-full capitalize `} target='_blank' href="https://wa.me/201028815414?text=Hello%2C%20I%20want%20to%20know%20more%20about%20your%20courses." rel='noopener noreferrer'>join now</a>
         {/* mobile screen menu */}
         <MobileMenu toggleMenu={toggleMenu} openMenu={openMenu} setOpenMenu={setOpenMenu} />
       </div>

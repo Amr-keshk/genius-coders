@@ -3,6 +3,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 :root {
     --green: #00beae;
     --orange:#ff9501;

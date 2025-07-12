@@ -1,6 +1,6 @@
 import React from 'react'
 import { socialLinks } from '../data/data'
-function SocialList({style="bg-darkblue hover:bg-orange"}) {
+function SocialList({style = "bg-darkblue hover:bg-orange"}) {
   return (
     <ul className='flex items-center gap-4 leading-none font-thin text-white text-xs'>
       {socialLinks.map((link, index) => {

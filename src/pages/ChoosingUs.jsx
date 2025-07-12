@@ -8,8 +8,13 @@ import paintPic from "/elements/paint3.png"
 import AIPic from "/bg/ai-revolution.avif"
 import logo from "/logo/logo-white.png"
 import InfoSection from '../components/InfoSection'
+import Footer from '../components/Footer'
+import {useLocation} from "react-router-dom"
+
 
 function WhyChoosing() {
+
+  const isHomePage = useLocation().pathname === "/"
 
   const titleIcon = <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ff9501"><path d="M440-70.77V-160H224.62q-27.62 0-46.12-18.5Q160-197 160-224.62v-510.76q0-27.62 18.5-46.12Q197-800 224.62-800H440v-89.23h40v818.46h-40ZM200-240h240v-287.69L200-240Zm360 80v-320l200 240v-495.38q0-9.24-7.69-16.93-7.69-7.69-16.93-7.69H560v-40h175.38q27.62 0 46.12 18.5Q800-763 800-735.38v510.76q0 27.62-18.5 46.12Q763-160 735.38-160H560Z"/></svg>
   const linkStyle = "rounded-lg bg-green shadow-md shadow-orange hover:shadow-none hover:translate-y-2"
@@ -39,14 +44,14 @@ function WhyChoosing() {
       
       <div className='drop-shadow-lg shadow-'></div>
       <div className='moon-box w-full '></div>
-      <div className='relative -top-28 max-w-screen-2xl mx-auto px-12 md:px-24 lg:px-44 overflow-x-hidden'>
+      <div className='relative -top-28 max-w-screen-2xl mx-auto md:px-24 lg:px-44 px-4 sm:px-12 overflow-x-hidden'>
         <div className='relative'>
           <div className='w-full h-full absolute top-0 left-0 bg-black opacity-25 rounded-tr-3xl rounded-bl-3xl'></div>
-          <img className='h-96 w-full object-cover max-sm:object-left bg-green rounded-tr-3xl rounded-bl-3xl' src={AIPic} alt="" />
+          <img className='h-96 w-full object-cover max-sm:object-right rounded-tr-3xl rounded-bl-3xl' src={AIPic} alt="" />
         </div>
       </div>
 
-      <div className='relative py-20 z-0 flex flex-col xl:flex-row gap-y-16 bg-thirdColor  -- max-w-screen-2xl mx-auto px-12 md:px-24 lg:px-44 overflow-hidden'>
+      <div className='relative py-20 z-0 flex flex-col xl:flex-row gap-y-16 bg-thirdColor  -- max-w-screen-2xl mx-auto px-4 sm:px-12 md:px-24 lg:px-44 overflow-hidden'>
         <img className='absolute left-0 top-36 brightness-90 max-w-full -z-10' src={logo} alt="" />
         <img className='absolute h-24 right-0 md:right-1/2 top-0 -z-10' src={spaceShip} alt="" />
         <img className='absolute w-40 bottom-96 sm:bottom-1/2 xl:bottom-10  right-0 sm:right-16 xl:right-1/2 -z-10 ' src={kidAndRobot} alt="" />
@@ -56,7 +61,11 @@ function WhyChoosing() {
           <img className='w-3/4 mx-auto rounded-lg' src={codingKid} alt="" />
           <img className='absolute w-32 right-0 -top-16 -z-10' src={paintPic} alt="" />
         </div>
-      </div>      
+      </div> 
+
+      {
+        !isHomePage && <Footer />
+      }    
     </section>
   )
 }
