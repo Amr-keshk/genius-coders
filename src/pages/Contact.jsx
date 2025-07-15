@@ -47,18 +47,18 @@ function Contact() {
                 onChange={setFormData}
                 name={field}
                 value={form[field]}
-                className="focus:bg-lightOrange focus:border-none focus:shadow-md hover:bg-lightOrange hover:border-transparent hover:shadow-md w-full px-4 py-4 rounded-tr-2xl rounded-bl-2xl border border-green text-darkblue focus:outline-none transition last:col-span-2"
+                className="focus:bg-lightOrange focus:border-none focus:shadow-md hover:bg-lightOrange hover:border-transparent hover:shadow-md w-full px-4 py-4 rounded-tr-2xl rounded-bl-2xl border border-green text-darkblue focus:outline-none transition "
                 placeholder={field === "mail" ? "E-Mail" : field.charAt(0).toUpperCase() + field.slice(1)}
                 type={field === "mail" ? "email" : field === "firstName" || field === "lastName" ? "text" : "tel"}
               />
             ))}
           </div>
-          <textarea className="border border-green py-4 px-4 h-20 outline-none hover:bg-lightOrange hover:border-transparent hover:shadow-md" placeholder="please enter your message"></textarea>
+          <textarea className="border border-green py-4 px-4 h-20 max-h-20 outline-none hover:bg-lightOrange hover:border-transparent hover:shadow-md" placeholder="please enter your message"></textarea>
 
           <div className="flex flex-col md:flex-row justify-between gap-6">
             <button
               className="flex-1 py-4 bg-gradient-to-r from-orange to-darkblue text-white font-bold rounded-xl shadow-lg hover:scale-105 hover:shadow-none transition duration-300 cursor-pointer"
-            >Submit <i className="fa-solid fa-shuttle-space -rotate-45"></i></button>
+            >Send <i className="fa-solid fa-shuttle-space -rotate-45"></i></button>
 
             <a
               href="https://wa.me/201028815414?text=Hello%2C%20I%20want%20to%20know%20more%20about%20your%20courses."

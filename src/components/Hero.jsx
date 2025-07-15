@@ -1,6 +1,6 @@
 import React from "react"
 import bg1 from "/bg/about4-1.webp"
-import bg6 from "/bg/Kids_Robotic.png"
+import robo_kid from "/bg/Kids_Robotic.avif"
 import paperRocket1 from "/elements/paper_rocket1.png"
 import paperRocket from "/elements/paper_rocket.png"
 import animatedSun from "/elements/sun_video1.gif"
@@ -11,7 +11,6 @@ import { mainFeatures } from "../data/data.js"
 import { Helmet } from "react-helmet-async"
 import cloud from "/elements/cloud.png"
 import threeLines from "/elements/three-lines.png"
-import bird from "/elements/greeting-bird.png"
 function Hero() {
   return (
     <section className='w-full relative'>
@@ -57,7 +56,7 @@ function Hero() {
               <img className='absolute -top-20 left-8 w-16 -scale-x-100' src={threeLines} alt="Astronaut in space representing future learning journey" loading="lazy" />
             </div>
             <div className="flex-1 self-end h-72 max-w-96 rounded-t-full rounded-br-full bg-green">
-              <img className='h-80 object-cover -mt-20 mb-5' src={bg6} alt="Astronaut in space representing future learning journey" loading="lazy" />
+              <img className='h-80 object-cover -mt-20 mb-5' src={robo_kid} alt="Astronaut in space representing future learning journey" loading="lazy" />
             </div>
           </div>
         </div>
