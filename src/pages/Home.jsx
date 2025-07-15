@@ -6,11 +6,13 @@ import ChoosingUs from './ChoosingUs'
 import Testimonials from "./Testimonials"
 import Footer from '../components/Footer'
 import Contact from './Contact'
+import ChatBot from './ChatBot'
 
 function Home() {
   return (
     <div>
       <Hero />
+      {/* <ChatBot /> */}
       <About />
       <ChoosingUs />
       <Testimonials />

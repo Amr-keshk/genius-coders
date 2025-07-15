@@ -8,6 +8,7 @@ export default {
     extend: {
       colors: {
         green: "var(--green)",
+        green2: "var(--green-2)",
         orange: "var(--orange)",
         thirdColor: "var(--thirdColor)",
         darkblue: "var(--darkBlue)",
@@ -18,7 +19,7 @@ export default {
       },
       fontFamily: {
         raleway: ['Raleway', 'sans-serif']
-      }
+      },
     },
   },
   plugins: [],

@@ -54,6 +54,8 @@ function About() {
       {
         !isHomePage && <Footer />
       }
+
+      
     </section>
   )
 }

@@ -100,7 +100,7 @@ function Testimonials() {
                   <div className='hover:scale-110 transition duration-500 rotate-3 cursor-pointer overflow-hidden border border-dotted border-orange rounded-md p-6'>
                     <img className='h-44 w-11/12 mx-auto object-cover object-top mb-14' src={say.image} alt={`photo for our great student ${say.name}`} />
                     <div className='-rotate-3 flex items-center my-2'>
-                      {Array(5).fill().map(star => <span className='fill-orange' key={star}>{starIcon}</span>)}
+                      {Array(5).fill().map((star) => <span className='fill-orange' key={star}>{starIcon}</span>)}
                     </div>
                     <div className='-rotate-6 bg-lightOrange'>
                       <h4 className='text-green text-xl'>{say.name}</h4>

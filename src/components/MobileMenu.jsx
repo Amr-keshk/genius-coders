@@ -51,7 +51,6 @@ MobileMenu.propTypes = {
   setOpenMenu: PropTypes.func.isRequired,
   toggleMenu: PropTypes.func.isRequired,
   openMenu: PropTypes.bool.isRequired,
-  iconBaseStyle: PropTypes.string.isRequired
 }
 
 
