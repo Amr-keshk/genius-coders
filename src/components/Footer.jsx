@@ -40,9 +40,9 @@ function Footer () {
             </a>
           )}
         </div>
-        <div className='text-gray pt-10 grid grid-cols-1 sm:grid-cols-2 xl:grid-col-4'>
+        <div className='text-gray pt-10 flex flex-col-reverse gap-10 sm:grid sm:grid-cols-2 xl:grid-col-4'>
 
-          <div >
+          <div>
             <img className='h-16' src={logo} alt="" />
             <p className='text-gray'>Our mission is to inspire and empower a new generation to stay ahead in the tech-driven world by mastering the art of PROGRAMMING. 👩🏼‍💻🤖🚀</p>
             <SocialList style="text-green bg-darkblue hover:bg-green hover:text-white"  />

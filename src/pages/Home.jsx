@@ -12,7 +12,7 @@ function Home() {
   return (
     <div>
       <Hero />
-      {/* <ChatBot /> */}
+      <ChatBot />
       <About />
       <ChoosingUs />
       <Testimonials />

@@ -47,7 +47,7 @@ function Contact() {
                 onChange={setFormData}
                 name={field}
                 value={form[field]}
-                className="focus:bg-lightOrange focus:border-none focus:shadow-md hover:bg-lightOrange hover:border-transparent hover:shadow-md w-full px-4 py-4 rounded-tr-2xl rounded-bl-2xl border border-green text-darkblue focus:outline-none transition "
+                className="focus:bg-lightOrange focus:border-none focus:shadow-md hover:bg-lightOrange hover:border-transparent hover:shadow-md w-full px-4 py-4 rounded-tr-2xl rounded-bl-2xl border border-green text-darkblue focus:outline-none transition"
                 placeholder={field === "mail" ? "E-Mail" : field.charAt(0).toUpperCase() + field.slice(1)}
                 type={field === "mail" ? "email" : field === "firstName" || field === "lastName" ? "text" : "tel"}
               />

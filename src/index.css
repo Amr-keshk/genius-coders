@@ -111,3 +111,15 @@ body {
     /* max-w-screen-2xl mx-auto px-4 sm:px-12 md:px-24 lg:px-44 */
     
 }
+/* .messages::after {
+    content: "";
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+
+    bottom: 0;
+    right: 0;
+    rotate: 0deg;
+    
+} */
